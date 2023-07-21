@@ -15,8 +15,7 @@ Install Istio base:
 ```bash
 helm upgrade -i istio-base istio/base \
   --namespace istio-system \
-  --create-namespace \
-  --set defaultRevision=default
+  --create-namespace
 ```
 
 Install IstioD:
