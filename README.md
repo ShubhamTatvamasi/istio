@@ -24,7 +24,7 @@ helm upgrade -i istio-istiod istio/istiod \
   --namespace istio-system
 ```
 
-Install Istio Gateway:
+Install Istio Gateway (Ingress controller):
 ```bash
 helm upgrade -i istio-gateway istio/gateway \
   --namespace istio-system
