@@ -11,7 +11,7 @@ Search Istio repos:
 helm search repo istio/
 ```
 
-Install Istio base:
+Install Istio CRD:
 ```bash
 helm upgrade -i istio-base istio/base \
   --namespace istio-system \
