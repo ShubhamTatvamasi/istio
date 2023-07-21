@@ -24,3 +24,8 @@ helm upgrade -i istiod istio/istiod \
   --namespace istio-system
 ```
 
+Create Namespace:
+```bash
+kubectl create ns testing
+kubectl label ns testing istio-injection=enabled
+```
