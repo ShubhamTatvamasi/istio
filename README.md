@@ -20,7 +20,13 @@ helm upgrade -i istio-base istio/base \
 
 Install IstioD:
 ```bash
-helm upgrade -i istiod istio/istiod \
+helm upgrade -i istio-istiod istio/istiod \
+  --namespace istio-system
+```
+
+Install Istio Gateway:
+```bash
+helm upgrade -i istio-gateway istio/gateway \
   --namespace istio-system
 ```
 
