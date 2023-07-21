@@ -29,3 +29,10 @@ Create Namespace:
 kubectl create ns testing
 kubectl label ns testing istio-injection=enabled
 ```
+
+Create nginx deployment:
+```bash
+kubectl -n testing create deployment nginx --image=nginx:alpine
+```
+
+
