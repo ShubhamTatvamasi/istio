@@ -31,6 +31,22 @@ helm upgrade -i istio-gateway istio/gateway \
   --create-namespace
 ```
 
+### kiali
+
+Add kiali repo:
+```bash
+helm repo add kiali https://kiali.org/helm-charts
+helm repo update
+```
+
+Install kiali:
+```bash
+helm upgrade -i kiali-server kiali/kiali-server \
+  --namespace istio-system \
+  --set auth.strategy="anonymous"
+```
+
+
 Create Namespace:
 ```bash
 kubectl create ns testing
