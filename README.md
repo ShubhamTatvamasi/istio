@@ -43,9 +43,9 @@ Install kiali:
 ```bash
 helm upgrade -i kiali-server kiali/kiali-server \
   --namespace istio-system \
-  --set auth.strategy="anonymous"
+  --set auth.strategy="anonymous" \
+  --set external_services.prometheus.url="http://prometheus-server.prometheus/"
 ```
-
 
 Create Namespace:
 ```bash
