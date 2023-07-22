@@ -44,7 +44,8 @@ Install kiali:
 helm upgrade -i kiali-server kiali/kiali-server \
   --namespace istio-system \
   --set auth.strategy="anonymous" \
-  --set external_services.prometheus.url="http://prometheus-server.prometheus/"
+  --set external_services.prometheus.url="http://prometheus-server.prometheus/" \
+  --set external_services.grafana.url="http://grafana.grafana/"
 ```
 
 Create Namespace:
